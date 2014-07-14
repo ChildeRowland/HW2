@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  
+  <title>
+  	RoR 101 HW2
+  </title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+
+	<h1>
+		Home Work of the second degree
+	</h1>
+
+	<%= link_to "Back to the Welcome Page", welcome_path %>
+
+<%= yield %>
+
+</body>
+<footer>
+	<p style="background-color: lightblue">alternative layout</p>
+</footer>
+</html>

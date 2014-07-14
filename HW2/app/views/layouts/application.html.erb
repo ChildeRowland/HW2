@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  
+  <title>
+  	RoR 101 HW2
+  </title>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+</head>
+
+<body>
+
+	<h1>
+		Home Work of the second degree
+	</h1>
+
+	<ul>
+		<li>
+			<%= link_to "Welcome", welcome_path %>
+		</li>
+		<li>
+			<%= link_to "About Us", about_path %>
+		</li>
+		<li>
+			<%= link_to "Profile", profile_path %>
+		</li>
+		<li>
+			<%= link_to "Purchases", purchases_path %>
+		</li>
+		<li>
+			<%= link_to "Favorites", favorites_path %>
+		</li>
+	</ul>
+
+<%= yield %>
+
+</body>
+<footer>
+
+	<p style="background-color: lightgreen">primary layout</p>
+	
+	<h4>HW 2 Criteria</h4>
+	<ul>
+		<li>
+			<del>
+				Create a new Rails application from scratch with two controllers. 
+			</del>
+		</li>
+		<li>
+			<del>
+				Each of the controllers should use a different layout. 
+			</del>
+		</li>
+		<li>
+			<del>
+				Each controller should have at least two views.
+			</del> 
+		</li>
+		<li>
+			One of  your views should use a partial that renders data passed to it. 
+		</li>
+		<li>
+			<del>
+				Use the link_to helper at  least once in your application.
+			</del>
+		</li>
+	</ul>
+
+</footer>
+</html>
