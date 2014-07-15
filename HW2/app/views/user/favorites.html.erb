@@ -4,3 +4,6 @@
 
 <p>Everyone loves lists.  Here's a list of all the things you you want on a list.</p>
 
+<% @list_of_favorites.each do |list|%>
+	<%= render 'favorites_list', list: list %>	
+<% end %>

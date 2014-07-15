@@ -3,11 +3,16 @@ class HomeController < ApplicationController
 
 
 	def index
-		@method_message = [
+		@new_message = 
 
-			{title: "This is the METHOD message."},
-			{body: "The text is a method from the home controller .rb file."}
-		]
+		{ 
+			title: "Message Title", body: "The text is an instance variable from the home controller ruby file."
+		}
+
+		# [
+		# 	{title: "Message Title."},
+		# 	{body: "The text is an instance variable from the home controller ruby file."}
+		# ]
 	end
 
 	def profile

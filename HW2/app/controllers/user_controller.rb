@@ -11,7 +11,9 @@ layout 'alternative_layout'
 	end
 
 	def favorites
-
+		@list_of_favorites = [
+			{item: "Jazzersize DVD"}, {item: "Carzy Monkey"}, {item: "first aid kit"}
+		]
 	end
 
 end
